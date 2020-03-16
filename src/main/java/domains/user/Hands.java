@@ -24,17 +24,14 @@ public class Hands {
 	private int score;
 	private boolean hasAce;
 
-	{
+	public Hands(List<Card> hands) {
+		this.hands = hands;
 		this.score = 0;
 		this.hasAce = false;
 	}
 
-	Hands(Deck deck) {
-		this.hands = deck.initialDraw();
-	}
-
-	public Hands(List<Card> hands) {
-		this.hands = hands;
+	static Hands HandsByDeck(Deck deck) {
+		return new Hands(deck.initialDraw());
 	}
 
 	int size() {

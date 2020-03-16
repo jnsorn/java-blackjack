@@ -12,7 +12,7 @@ public class Player extends User {
 
 	public Player(String name, Deck deck) {
 		this.name = new PlayerName(name);
-		this.hands = new Hands(deck);
+		this.hands = Hands.HandsByDeck(deck);
 	}
 
 	public Player(String name, Hands hands) {

@@ -7,7 +7,7 @@ public class Dealer extends User {
 	private boolean hitFlag = false;
 
 	public Dealer(Deck deck) {
-		this.hands = new Hands(deck);
+		this.hands = Hands.HandsByDeck(deck);
 	}
 
 	public Dealer(Hands hands) {
