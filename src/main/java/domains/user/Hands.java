@@ -6,6 +6,14 @@ import java.util.List;
 import domains.card.Card;
 import domains.card.Deck;
 
+/**
+ * Hands.java
+ * 플레이어나 딜러가 게임을 위해 받은 카드들
+ * (실제 블랙잭에서 hand/ands로 표현하며, 여기서는 hands로 명명한다.)
+ *
+ * @author  ddoring
+ * @version 1.0
+ */
 public class Hands {
 	private static final int ACE_SCORE_CHANGE_POINT = 11;
 	private static final int ACE_EXTRA_SCORE = 10;
