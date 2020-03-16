@@ -24,7 +24,7 @@ public class Player extends User {
 		checkNullOrEmpty(answer);
 		checkYesOrNo(answer);
 
-		if (answer.equals(YES)) {
+		if (YES.equals(answer)) {
 			hit(deck);
 			return true;
 		}
@@ -38,7 +38,7 @@ public class Player extends User {
 	}
 
 	private void checkYesOrNo(String answer) {
-		if (answer.equals(YES) || answer.equals(NO)) {
+		if (YES.equals(answer) || NO.equals(answer)) {
 			return;
 		}
 		throw new InvalidPlayerException(InvalidPlayerException.INVALID_INPUT);
